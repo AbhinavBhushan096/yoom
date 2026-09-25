@@ -1,424 +1,111 @@
 <div align="center">
-  <br />
-    <a >
-      <img src="https://github.com/adrianhajdin/zoom-clone/assets/67959015/f09a8421-67d3-45ce-b9bc-a791cdc2774b" alt="Project Banner">
-    </a>
-  
+
+  <img src="https://github.com/adrianhajdin/zoom-clone/assets/67959015/f09a8421-67d3-45ce-b9bc-a791cdc2774b" alt="YOOM project banner" />
+
   <br />
 
-  <div>
-    <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
-    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-  </div>
+  <img src="https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/-Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk" />
+  <img src="https://img.shields.io/badge/-Stream-005FFF?style=for-the-badge&logo=stream&logoColor=white" alt="Stream" />
 
-  <h3 align="center">A Zoom Clone</h3>
+  <h1>YOOM</h1>
 
+  <p>A real-time video meeting app for instant calls, scheduled meetings, screen sharing, and recordings.</p>
 
-## 📋 <a name="table">Table of Contents</a>
+</div>
 
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Assets & Code](#snippets)
-6. 🚀 [More](#more)
+## Table of contents
 
+1. [Introduction](#introduction)
+2. [Tech stack](#tech-stack)
+3. [Features](#features)
+4. [Quick start](#quick-start)
+5. [Environment variables](#environment-variables)
+6. [Project structure](#project-structure)
 
-## <a name="introduction">🤖 Introduction</a>
+## Introduction
 
-Built with the latest Next.js and TypeScript, this project replicates Zoom, a widely used video conferencing tool. It enables users to securely log in, create meetings and access various meeting functionalities such as recording, screen sharing, and managing participants.
+YOOM lets people sign in, start or join a meeting, and use the usual meeting controls: camera, microphone, screen share, reactions, recording, and participant management. Authentication is handled by Clerk. Live video is handled by Stream.
 
+## Tech stack
 
-
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
+- [Next.js](https://nextjs.org/) 14 and React 18
 - TypeScript
-- Clerk
-- getstream
-- shadcn
-- Tailwind CSS
+- [Clerk](https://clerk.com/) for authentication
+- [Stream Video](https://getstream.io/video/) for calls
+- [shadcn/ui](https://ui.shadcn.com/) and [Tailwind CSS](https://tailwindcss.com/)
 
-## <a name="features">🔋 Features</a>
+## Features
 
+- **Authentication.** Sign in with email or a social provider, with protected meeting routes.
+- **Instant meeting.** Start a call and set camera and microphone before joining.
+- **Meeting controls.** Record, react, share a screen, mute, change layout, and manage participants.
+- **Leave or end.** Participants can leave. The host can end the meeting for everyone.
+- **Schedule.** Pick a date and time. Upcoming meetings can be shared or started from the dashboard.
+- **History.** Review past meetings and open recordings.
+- **Personal room.** Each account has a stable meeting link.
+- **Join by link.** Enter a meeting link to join someone else's call.
+- **Responsive layout.** The dashboard and meeting UI adapt to smaller screens.
 
-👉 **Authentication**: Implements authentication and authorization features using Clerk, allowing users to securely log in via social sign-on or traditional email and password methods, while ensuring appropriate access levels and permissions within the platform.
-
-👉 **New Meeting**: Quickly start a new meeting, configuring camera and microphone settings before joining.
-
-👉 **Meeting Controls**: Participants have full control over meeting aspects, including recording, emoji reactions, screen sharing, muting/unmuting, sound adjustments, grid layout, participant list view, and individual participant management (pinning, muting, unmuting, blocking, allowing video share).
-
-👉 **Exit Meeting**: Participants can leave a meeting, or creators can end it for all attendees.
-
-👉 **Schedule Future Meetings**: Input meeting details (date, time) to schedule future meetings, accessible on the 'Upcoming Meetings' page for sharing the link or immediate start.
-
-👉 **Past Meetings List**: Access a list of previously held meetings, including details and metadata.
-
-👉 **View Recorded Meetings**: Access recordings of past meetings for review or reference.
-
-👉 **Personal Room**: Users have a personal room with a unique meeting link for instant meetings, shareable with others.
-
-👉 **Join Meetings via Link**: Easily join meetings created by others by providing a link.
-
-👉 **Secure Real-time Functionality**: All interactions within the platform are secure and occur in real-time, maintaining user privacy and data integrity.
-
-👉 **Responsive Design**: Follows responsive design principles to ensure optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
-
-and many more, including code architecture and reusability. 
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
+## Quick start
 
 **Prerequisites**
 
-Make sure you have the following installed on your machine:
-
 - [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [Node.js](https://nodejs.org/) 18 or newer
+- [npm](https://www.npmjs.com/)
 
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/AbhinavBhushan096/zoom_clone.git
-cd zoom-clone
-```
-
-**Installation**
-
-Install the project dependencies using npm:
+**Clone and install**
 
 ```bash
+git clone https://github.com/AbhinavBhushan096/yoom.git
+cd yoom
 npm install
 ```
 
-**Set Up Environment Variables**
+**Configure credentials**
 
-Create a new file named `.env` in the root of your project and add the following content:
-
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-
-NEXT_PUBLIC_STREAM_API_KEY=
-STREAM_SECRET_KEY=
+```bash
+cp .env.example .env.local
 ```
 
-Replace the placeholder values with your actual Clerk & getstream credentials. You can obtain these credentials by signing up on the [Clerk website](https://clerk.com/) and [getstream website](https://getstream.io/)
+Fill in `.env.local` with your Clerk and Stream keys. See [Environment variables](#environment-variables).
 
-**Running the Project**
+**Run**
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
+Open [http://localhost:3000](http://localhost:3000).
 
-## <a name="snippets">🕸️ Snippets</a>
+## Environment variables
 
-<details>
-<summary><code>app/globals.css</code></summary>
+Copy `.env.example` to `.env.local`. Do not commit `.env.local`.
 
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+| Variable | Required | Where to get it |
+| --- | --- | --- |
+| `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` | Yes | [Clerk Dashboard](https://dashboard.clerk.com) → API keys |
+| `CLERK_SECRET_KEY` | Yes | Clerk Dashboard → API keys |
+| `NEXT_PUBLIC_CLERK_SIGN_IN_URL` | Yes | Use `/sign-in` |
+| `NEXT_PUBLIC_CLERK_SIGN_UP_URL` | Yes | Use `/sign-up` |
+| `NEXT_PUBLIC_STREAM_API_KEY` | Yes | [Stream Dashboard](https://dashboard.getstream.io) → your app → API keys |
+| `STREAM_SECRET_KEY` | Yes | Stream Dashboard → your app → API keys |
+| `NEXT_PUBLIC_BASE_URL` | Yes | `http://localhost:3000` locally, or your deployed URL |
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+`NEXT_PUBLIC_BASE_URL` is used to build invite links. It must not have a trailing slash.
 
-/* ======== stream css overrides ======== */
-.str-video__call-stats {
-  max-width: 500px;
-  position: relative;
-}
+## Project structure
 
-.str-video__speaker-layout__wrapper {
-  max-height: 700px;
-}
-
-.str-video__participant-details {
-  color: white;
-}
-
-.str-video__menu-container {
-  color: white;
-}
-
-.str-video__notification {
-  color: white;
-}
-
-.str-video__participant-list {
-  background-color: #1c1f2e;
-  padding: 10px;
-  border-radius: 10px;
-  color: white;
-  height: 100%;
-}
-
-.str-video__call-controls__button {
-  height: 40px;
-}
-
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.glassmorphism2 {
-  background: rgba(18, 17, 17, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-/* ==== clerk class override ===== */
-
-.cl-userButtonPopoverActionButtonIcon {
-  color: white;
-}
-
-.cl-logoBox {
-  height: 40px;
-}
-.cl-dividerLine {
-  background: #252a41;
-  height: 2px;
-}
-
-.cl-socialButtonsIconButton {
-  border: 3px solid #565761;
-}
-
-.cl-internal-wkkub3 {
-  color: white;
-}
-.cl-userButtonPopoverActionButton {
-  color: white;
-}
-
-/* =============================== */
-
-@layer utilities {
-  .flex-center {
-    @apply flex justify-center items-center;
-  }
-
-  .flex-between {
-    @apply flex justify-between items-center;
-  }
-}
-
-/* animation */
-
-.show-block {
-  width: 100%;
-  max-width: 350px;
-  display: block;
-  animation: show 0.7s forwards linear;
-}
-
-@keyframes show {
-  0% {
-    animation-timing-function: ease-in;
-    width: 0%;
-  }
-
-  100% {
-    animation-timing-function: ease-in;
-    width: 100%;
-  }
-}
+```text
+app/            Routes for auth, home, and meetings
+actions/        Server actions (Stream tokens)
+components/     UI, meeting room, and dashboard cards
+constants/      Shared constants
+hooks/          Stream call queries
+lib/            Utilities
+providers/      Stream client provider
+public/         Icons and images
 ```
-
-</details>
-
-<details>
-<summary><code>tailwind.config.ts</code></summary>
-
-```typescript
-import type { Config } from 'tailwindcss';
-
-const config = {
-  darkMode: ['class'],
-  content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
-  prefix: '',
-  theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px',
-      },
-    },
-    extend: {
-      colors: {
-        dark: {
-          1: '#1C1F2E',
-          2: '#161925',
-          3: '#252A41',
-          4: '#1E2757',
-        },
-        blue: {
-          1: '#0E78F9',
-        },
-        sky: {
-          1: '#C9DDFF',
-          2: '#ECF0FF',
-          3: '#F5FCFF',
-        },
-        orange: {
-          1: '#FF742E',
-        },
-        purple: {
-          1: '#830EF9',
-        },
-        yellow: {
-          1: '#F9A90E',
-        },
-      },
-      keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
-        },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
-        },
-      },
-      animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
-      },
-      backgroundImage: {
-        hero: "url('/images/hero-background.png')",
-      },
-    },
-  },
-  plugins: [require('tailwindcss-animate')],
-} satisfies Config;
-
-export default config;
-```
-
-</details>
-
-<details>
-<summary><code>components/MeetingCard.tsx</code></summary>
-
-```typescript
-"use client";
-
-import Image from "next/image";
-
-import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
-import { avatarImages } from "@/constants";
-import { useToast } from "./ui/use-toast";
-
-interface MeetingCardProps {
-  title: string;
-  date: string;
-  icon: string;
-  isPreviousMeeting?: boolean;
-  buttonIcon1?: string;
-  buttonText?: string;
-  handleClick: () => void;
-  link: string;
-}
-
-const MeetingCard = ({
-  icon,
-  title,
-  date,
-  isPreviousMeeting,
-  buttonIcon1,
-  handleClick,
-  link,
-  buttonText,
-}: MeetingCardProps) => {
-  const { toast } = useToast();
-
-  return (
-    <section className="flex min-h-[258px] w-full flex-col justify-between rounded-[14px] bg-dark-1 px-5 py-8 xl:max-w-[568px]">
-      <article className="flex flex-col gap-5">
-        <Image src={icon} alt="upcoming" width={28} height={28} />
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-2">
-            <h1 className="text-2xl font-bold">{title}</h1>
-            <p className="text-base font-normal">{date}</p>
-          </div>
-        </div>
-      </article>
-      <article className={cn("flex justify-center relative", {})}>
-        <div className="relative flex w-full max-sm:hidden">
-          {avatarImages.map((img, index) => (
-            <Image
-              key={index}
-              src={img}
-              alt="attendees"
-              width={40}
-              height={40}
-              className={cn("rounded-full", { absolute: index > 0 })}
-              style={{ top: 0, left: index * 28 }}
-            />
-          ))}
-          <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-dark-3 bg-dark-4">
-            +5
-          </div>
-        </div>
-        {!isPreviousMeeting && (
-          <div className="flex gap-2">
-            <Button onClick={handleClick} className="rounded bg-blue-1 px-6">
-              {buttonIcon1 && (
-                <Image src={buttonIcon1} alt="feature" width={20} height={20} />
-              )}
-              &nbsp; {buttonText}
-            </Button>
-            <Button
-              onClick={() => {
-                navigator.clipboard.writeText(link);
-                toast({
-                  title: "Link Copied",
-                });
-              }}
-              className="bg-dark-4 px-6"
-            >
-              <Image
-                src="/icons/copy.svg"
-                alt="feature"
-                width={20}
-                height={20}
-              />
-              &nbsp; Copy Link
-            </Button>
-          </div>
-        )}
-      </article>
-    </section>
-  );
-};
-
-export default MeetingCard;
-```
-
-</details>
-
-## <a name="links">🔗 Links</a>
-
-Public assets used in the project can be found [here](https://drive.google.com/file/d/1ofTpWii_sCIdJ14uQ431xWVXpYgjtQ8Q/view?usp=sharing)
-
